@@ -1,0 +1,212 @@
+/* font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* css reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* css */
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Purple-dark: hsl(248, 32%, 49%);
+  --Gray: hsl(249, 10%, 26%);
+  --Purple-light: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(./images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-color: var(--Red);
+  background-position: center;
+}
+
+main {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 0.5fr 1fr;
+  text-align: center;
+  max-width: 25rem;
+}
+
+.card1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.card1 h1 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  max-width: 25ch;
+  margin: 0.5rem auto;
+}
+
+.card1 p {
+  font-size: 0.95rem;
+  max-width: 30ch;
+  margin: 0.5rem auto;
+}
+
+.card2__box {
+  background-color: var(--Purple-dark);
+  color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0px 4px 1px var(--Gray);
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.card2__box p {
+  font-size: 0.85rem;
+  max-width: 20ch;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.card2__form {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0px 6px 1px var(--Gray);
+}
+
+input,
+.btn {
+  width: 100%;
+  border: 1px solid var(--Gray);
+  border-radius: 0.4rem;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+}
+
+input {
+  padding-left: 1rem;
+}
+
+input::placeholder {
+  font-weight: 500;
+}
+
+.btn-green {
+  border: none;
+  background-color: var(--Green);
+  text-transform: uppercase;
+  box-shadow: 0px 4px 1px var(--Gray);
+  color: white;
+  font-weight: 400;
+}
+
+.disclamer {
+  font-size: 0.75rem;
+  color: var(--Gray);
+  line-height: 1.3rem;
+}
+
+.txt-red {
+  color: red;
+  font-weight: 500;
+}
