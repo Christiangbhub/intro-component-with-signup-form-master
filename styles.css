@@ -135,7 +135,7 @@ main {
 }
 
 .card1 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 1rem 0;
   max-width: 25ch;
   margin: 0.5rem auto;
@@ -202,7 +202,7 @@ input::placeholder {
 
 .btn-green:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .disclamer {
@@ -212,8 +212,18 @@ input::placeholder {
 }
 
 .txt-red {
+  text-decoration: none;
   color: red;
   font-weight: 500;
+}
+
+.error-msg {
+  display: none;
+  text-align: left;
+  margin: 0;
+  color: red;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 @media (min-width: 40rem) {
@@ -222,7 +232,6 @@ input::placeholder {
     background-repeat: no-repeat;
     background-color: var(--Red);
     background-position: center;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -230,31 +239,35 @@ input::placeholder {
   }
 
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 0.3fr 1fr;
     grid-auto-rows: 1fr;
-  }
-
-  .card1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
     padding: 0 2rem;
   }
 
+  .card1 {
+    margin-top: 8rem;
+    text-align: left;
+  }
+
   .card1 h1 {
-    font-size: 2rem;
-    /* max-width: unset; */
-    padding: 0;
+    font-size: 2.3rem;
+    max-width: 20ch;
   }
 
   .card1 p {
     font-size: 0.95rem;
+    padding: 0;
+    max-width: 50ch;
+    line-height: 1.7rem;
+  }
+
+  .card2 {
+    grid-column-start: 3;
+    margin-right: 3rem;
   }
 
   .card2__box p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     max-width: unset;
   }
 }
