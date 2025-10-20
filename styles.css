@@ -125,26 +125,23 @@ main {
   grid-template-columns: 1fr;
   grid-auto-rows: 0.5fr 1fr;
   text-align: center;
-  /* max-width: 25rem; */
+  padding: 0.2rem;
 }
 
 .card1 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
   color: white;
 }
 
 .card1 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem 0;
-  max-width: 25ch;
-  margin: 0.5rem auto;
 }
 
 .card1 p {
   font-size: 0.95rem;
-  max-width: 30ch;
-  margin: 0.5rem auto;
 }
 
 .card2__box {
@@ -217,16 +214,28 @@ input::placeholder {
   font-weight: 500;
 }
 
-.error-msg {
+.error-msg,
+.error-msg-pass,
+.error-msg-fname,
+.error-msg-lname,
+.error-msg-email {
   display: none;
-  text-align: left;
+  text-align: right;
   margin: 0;
   color: red;
   font-size: 0.8rem;
   font-style: italic;
 }
 
-@media (min-width: 40rem) {
+.error-icon {
+  position: absolute;
+  left: 1000px;
+  bottom: 500px;
+
+  /* bottom: 60rem; */
+}
+
+@media (min-width: 64rem) {
   body {
     background: url(./images/bg-intro-desktop.png);
     background-repeat: no-repeat;
@@ -242,10 +251,11 @@ input::placeholder {
     grid-template-columns: 1fr 0.3fr 1fr;
     grid-auto-rows: 1fr;
     padding: 0 2rem;
+    max-width: 80rem;
   }
 
   .card1 {
-    margin-top: 8rem;
+    margin-top: 5rem;
     text-align: left;
   }
 
