@@ -214,7 +214,6 @@ input::placeholder {
   font-weight: 500;
 }
 
-.error-msg,
 .error-msg-pass,
 .error-msg-fname,
 .error-msg-lname,
@@ -227,12 +226,26 @@ input::placeholder {
   font-style: italic;
 }
 
-.error-icon {
-  position: absolute;
-  left: 1000px;
-  bottom: 500px;
+.error-msg {
+  display: none;
+  font-size: 0.95rem;
+  margin: 0;
+  text-align: center;
+  color: green;
+}
 
-  /* bottom: 60rem; */
+.form-field1,
+.form-field2,
+.form-field3,
+.form-field4 {
+  position: relative;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 @media (min-width: 64rem) {
