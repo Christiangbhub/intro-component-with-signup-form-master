@@ -214,10 +214,10 @@ input::placeholder {
   font-weight: 500;
 }
 
-.error-msg-pass,
-.error-msg-fname,
-.error-msg-lname,
-.error-msg-email {
+#error-msg-pass,
+#error-msg-fname,
+#error-msg-lname,
+#error-msg-email {
   display: none;
   text-align: right;
   margin: 0;
@@ -226,7 +226,11 @@ input::placeholder {
   font-style: italic;
 }
 
-.error-msg {
+label {
+  display: none;
+}
+
+#error-msg {
   display: none;
   font-size: 0.95rem;
   margin: 0;
@@ -248,7 +252,7 @@ input::placeholder {
   right: 10px;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 50rem) {
   body {
     background: url(./images/bg-intro-desktop.png);
     background-repeat: no-repeat;

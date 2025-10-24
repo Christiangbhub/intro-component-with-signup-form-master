@@ -34,11 +34,12 @@
           <div class="card2__form">
             <form action="#" id="form">
               <div class="form-field1">
-                <label for="firstname"></label>
+                <label for="firstname">Firstname</label>
                 <input
                   type="text"
                   name="firstname"
                   id="firstname"
+                  aria-describedby="error-firstname"
                   placeholder="First Name"
                 />
                 <img
@@ -46,15 +47,16 @@
                   src="./images/icon-error.svg"
                   alt=""
                 />
-                <p class="error-msg-fname"></p>
+                <p id="error-msg-fname"></p>
               </div>
 
               <div class="form-field2">
-                <label for="lastname"></label>
+                <label for="lastname">Lastname</label>
                 <input
                   type="text"
                   id="lastname"
                   name="lastname"
+                  aria-describedby="error-lastname"
                   placeholder="Last Name"
                 />
                 <img
@@ -62,15 +64,16 @@
                   src="./images/icon-error.svg"
                   alt=""
                 />
-                <p class="error-msg-lname"></p>
+                <p id="error-msg-lname"></p>
               </div>
 
               <div class="form-field3">
-                <label for="email"></label>
+                <label for="email">Email Address</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  aria-describedby="error-emailAddress"
                   placeholder="Email Address"
                 />
                 <img
@@ -78,15 +81,16 @@
                   src="./images/icon-error.svg"
                   alt=""
                 />
-                <p class="error-msg-email"></p>
+                <p id="error-msg-email"></p>
               </div>
 
               <div class="form-field4">
-                <label for="password"></label>
+                <label for="password">Password</label>
                 <input
                   type="password"
                   id="password"
                   name="password"
+                  aria-describedby="error-password"
                   placeholder="Password"
                 />
                 <img
@@ -94,13 +98,13 @@
                   src="./images/icon-error.svg"
                   alt=""
                 />
-                <p class="error-msg-pass"></p>
+                <p id="error-msg-pass"></p>
               </div>
 
               <button type="submit" class="btn btn-green">
                 Claim your free trial
               </button>
-              <p class="error-msg"></p>
+              <p id="error-msg"></p>
             </form>
             <p class="disclamer">
               By clicking the button, you are agreeing to our

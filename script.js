@@ -9,11 +9,11 @@ var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 //error messages variables
 
-var message = $(".error-msg");
-var message_fname = $(".error-msg-fname");
-var message_lname = $(".error-msg-lname");
-var message_email = $(".error-msg-email");
-var message_pass = $(".error-msg-pass");
+var message = $("#error-msg");
+var message_fname = $("#error-msg-fname");
+var message_lname = $("#error-msg-lname");
+var message_email = $("#error-msg-email");
+var message_pass = $("#error-msg-pass");
 
 //error icons
 var icons = $(".error-icon");
